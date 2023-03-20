@@ -1,0 +1,8 @@
+1. Download from the website https://sci2s.ugr.es/keel/dataset.php?cod=153 a set of statistical data. Figure out what data is given in the set and which attribute is the class label.
+2. Based on the downloaded file, create a Pandas DataFrame by selecting the correct column data types.
+3. Standardize the received date frame.
+4. Divide the data frame into training, test and validation samples in the ratio 5 / 3 / 2 with the use of stratification.
+5. Build a decision tree based on the training and test samples. Changing the value of the alpha parameter ([0.005, 0.01, 0.015, 0.02, 0.025, 0.03, 0.035, 0.2, 0.8]) and the classification criterion ([Entropy, Gini]) select the most successful classification tree for the prepared samples according to the macro-averaged parameter ROC-AUC.
+6. Build an SVM classifier based on the training and test samples. By changing the value of the parameters kernel, gamma, coef0, degree, C (based on the options presented in lecture 1 of the second semester), it is justified to select the most successful tree according to the macro-average ROC-AUC classification parameter for the prepared samples.
+7. Build a Random Forest classifier based on the training and test samples. By changing the value of the classification criterion parameter ([Entropy, Gini]), as well as the number of trees generated and the number of fields used, select the most successful forest according to the macro-averaged ROC-AUC parameter for the prepared samples.
+8. Enrich the sample and repeat steps 5, 6, 7. Compare the obtained 6 classifiers using the ROC-AUC criterion and the validation sample and choose the best one.
