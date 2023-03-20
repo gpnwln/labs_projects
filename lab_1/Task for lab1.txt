@@ -1,0 +1,8 @@
+1. Download from the website https://sci2s.ugr.es/keel/dataset.php?cod=210 a set of statistical data. Figure out what data is given in the set and which attribute is the class label.
+2. Based on the downloaded file, create a Pandas DataFrame by selecting the correct column data types.
+3. Standardize the received date frame.
+4. Divide the data frame into training, test and validation samples in the ratio 5 / 3 / 2 .
+5. Based on the training and test samples, build a decision tree, calculate the classifier efficiency parameters (Accuracy, Precision. Recall, ROC-AUC). Changing the value of the alpha parameter ([0.005, 0.01, 0.015, 0.02, 0.025, 0.03, 0.035, 0.2, 0.8]) and the classification criterion ([Entropy, Gini]) is justified. select the most successful classification tree for the prepared samples.
+6. Based on the training and test samples, build an SVM classifier, calculate the classifier efficiency parameters (Accuracy, Precision. Recall, ROC-AUC). Changing the value of the parameters kernel, gamma, coef0, degree, C, reasonably select the most successful classification tree for the prepared samples.
+7. Using a validation sample, calculate the efficiency parameters for the best decision tree and the best SVM classifier (Accuracy, Precision.
+Recall, ROC-AUC). Justify which of the two classifiers and when is better.
